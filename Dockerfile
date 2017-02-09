@@ -6,7 +6,7 @@ RUN yum update -y && \
     yum install libidn libXext mc joe wget strace subversion sudo -y && \
     yum install apr-devel apr-util-devel -y && \
     yum groupinstall "Development Tools" -y && \
-    yum install libX11-devel libSM-devel libxml2-devel libjpeg-devel mesa-libGLU-devel -y
+    yum install libX11-devel libSM-devel libxml2-devel libjpeg-devel mesa-libGLU-devel freetype-devel -y
 
 
 # install cmake
