@@ -10,7 +10,7 @@ COPY ./yum.repos.d/ /etc/yum.repos.d/
 
 # install a bunch of development packages
 RUN yum update -y && \
-    yum install libidn libXext mc joe nano wget strace subversion sudo man man-pages -y && \
+    yum install libidn libXext mc joe nano curl.x86_64 wget strace subversion sudo man man-pages -y && \
     yum install apr-devel apr-util-devel openssl-devel -y && \
     yum groupinstall "Development Tools" -y && \
     yum install libX11-devel libSM-devel libxml2-devel libjpeg-devel mesa-libGLU-devel freetype-devel -y
